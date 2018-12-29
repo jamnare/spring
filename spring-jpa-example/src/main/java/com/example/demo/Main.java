@@ -15,12 +15,12 @@ public class Main {
 		Student s = em.find(Student.class, 10002);
 		System.out.println(s);
 
-		Student aj=new Student();
-		aj.setId(1);
-		aj.setName("NewUser3");
-		aj.setPassportnumber("A12343");
+		Student s1=new Student();
+		s1.setId(1);
+		s1.setName("NewUser3");
+		s1.setPassportnumber("A12343");
 		em.getTransaction().begin();
-		em.persist(aj);
+		em.persist(s1);
 		em.getTransaction().commit();
 		
 		s = em.find(Student.class, 1);
