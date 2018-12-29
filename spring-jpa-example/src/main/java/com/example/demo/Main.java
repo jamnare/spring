@@ -18,7 +18,7 @@ public class Main {
 		Student s1=new Student();
 		s1.setId(1);
 		s1.setName("NewUser3");
-		s1.setPassportnumber("A12343");
+		s1.setPassportnumber("P30003");
 		em.getTransaction().begin();
 		em.persist(s1);
 		em.getTransaction().commit();
